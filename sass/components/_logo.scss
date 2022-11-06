@@ -1,0 +1,9 @@
+/* Загальні стилі для лого */
+.logo {
+  font-family: var(--second-font-family);
+  @include font(var(--second-font-weight), 26px, 1.19, 0.03em);
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

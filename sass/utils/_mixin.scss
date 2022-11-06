@@ -1,0 +1,19 @@
+@mixin transition($duration: 250ms, $time: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-duration: $duration;
+  transition-timing-function: $time;
+}
+
+@mixin displayCenter($dis: flex, $align: center, $justify: center) {
+  display: $dis;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font($fw: 700, $fs: 14px, $lh: 1.16, $ls: 0.03em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+// @include font(var(--second-font-weight), 26px, 1.19, 0.03em);
+// @include font(inherit, 12px, 1.16, 0.01em);

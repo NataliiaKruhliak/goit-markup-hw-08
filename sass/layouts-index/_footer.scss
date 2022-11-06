@@ -1,0 +1,103 @@
+.footer {
+  background: var(--second-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .logo span {
+    color: var(--white-color);
+  }
+}
+
+.address-container {
+  margin-right: 70px;
+  width: 231px;
+}
+
+.address__list {
+  margin-top: 20px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  @include font(inherit, 14px, 1.71, 0.03em);
+  &--white {
+    color: var(--white-color);
+  }
+
+  &--grey {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.social__title {
+  @include font(var(--second-font-weight), 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.footer-form__input-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-form__title {
+  @include font(var(--second-font-weight), 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 12px;
+  @include font(inherit, 16px, 1.25, 0.03em);
+  color: var(--white-color);
+
+  &::placeholder {
+    @include font(inherit, 16px, 1.25, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.btn-send {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-color);
+  fill: var(--white-color);
+  @include font(var(--second-font-weight), 16px, 1.87, 0.06em);
+  min-width: 200px;
+  height: 50px;
+  outline: none;
+  transition-property: background-color;
+  @include transition(250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include displayCenter(flex, center, center);
+
+  &:focus,
+  &:hover {
+    background-color: var(--btn-active);
+  }
+}
+
+.footer-form__input-btn-icon {
+  margin-left: 10px;
+}

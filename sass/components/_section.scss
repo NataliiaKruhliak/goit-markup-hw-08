@@ -1,0 +1,8 @@
+.section {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+
+.direction--no-top-padding {
+  padding-top: 0;
+}
