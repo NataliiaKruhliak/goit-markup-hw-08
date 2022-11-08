@@ -1,7 +1,11 @@
 // /Стилі для головних заголовків в секції direction, team, clients
 .sections-title {
-  @include font(var(--second-font-weight), 36px, 1.16, 0.03em);
+  @include font(var(--second-font-weight), 28px, 1.17, 0.03em);
   text-align: center;
   color: var(--main-color-text);
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    @include font(var(--second-font-weight), 36px, 1.16, 0.03em);
+  }
 }

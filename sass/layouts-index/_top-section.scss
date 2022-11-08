@@ -9,7 +9,7 @@
 }
 
 .top-section__title {
-  @include font(900, 44px, 1.36, 0.06em);
+  @include font(900, 26px, 1.61, 0.06em);
   text-transform: uppercase;
   color: var(--white-color);
   width: 696px;
@@ -17,6 +17,10 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 1.36, 0.06em);
+  }
 }
 
 .top-section__btn {
@@ -24,7 +28,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
   @include font(var(--second-font-weight), 16px, 1.87, 0.06em);
-  min-width: 216px;
+  min-width: 200px;
   display: flex;
   text-align: center;
   padding: 10px 32px;
@@ -37,5 +41,9 @@
   &:focus,
   &:hover {
     background-color: var(--btn-active);
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
   }
 }
