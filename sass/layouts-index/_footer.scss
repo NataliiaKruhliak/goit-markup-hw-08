@@ -2,24 +2,60 @@
   background: var(--second-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  display: list-item;
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
   }
 
   .logo span {
     color: var(--white-color);
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .address-container {
-  margin-right: 70px;
   width: 231px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
+}
+
+.social {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: auto;
+  }
+}
+
+.input {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .address__list {
@@ -49,8 +85,12 @@
 }
 
 .footer-form__input-container {
-  display: flex;
+  display: list-item;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer-form__title {
@@ -67,15 +107,24 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-right: 12px;
+
   @include font(inherit, 16px, 1.25, 0.03em);
   color: var(--white-color);
 
   &::placeholder {
     @include font(inherit, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
