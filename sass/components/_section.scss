@@ -21,3 +21,39 @@
 .direction--no-top-padding {
   padding-top: 0;
 }
+
+.top-section {
+  background-color: var(--second-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: var(--bg-gradient), url(../images/top-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: var(--bg-gradient), url(../images/top-bg-mob-2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: var(--bg-gradient), url(../images/top-bg-tab.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/top-bg-tab-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: var(--bg-gradient), url(../images/top-bg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/top-bg-2x.jpg);
+    }
+    // @include retina {
+    //   background-image: var(--bg-gradient), url(../images/top-bg-2x.jpg);
+    // }
+  }
+}

@@ -14,11 +14,7 @@
   --main-font-weight: 400;
   --second-font-weight: 700;
   --image-gap: 30px;
-  --main-image-background: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/top-bg.jpg);
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .visually-hidden {
@@ -132,6 +128,41 @@ body {
 
 .direction--no-top-padding {
   padding-top: 0;
+}
+
+.top-section {
+  background-color: var(--second-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: var(--bg-gradient), url(../images/top-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .top-section {
+    background-image: var(--bg-gradient), url(../images/top-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-section {
+    background-image: var(--bg-gradient), url(../images/top-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .top-section {
+    background-image: var(--bg-gradient), url(../images/top-bg-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-section {
+    background-image: var(--bg-gradient), url(../images/top-bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .top-section {
+    background-image: var(--bg-gradient), url(../images/top-bg-2x.jpg);
+  }
 }
 
 /* Загальні стилі для лого */
@@ -518,28 +549,27 @@ body {
   background-image: url("../images/icon-phone.svg");
   background-size: contain;
 }  */
-.top-section {
-  background-color: var(--second-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: var(--main-image-background);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .top-section__title {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  width: 696px;
+  width: 290px;
   margin-bottom: 30px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .top-section__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .top-section__title {
@@ -547,6 +577,7 @@ body {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    width: 696px;
   }
 }
 
