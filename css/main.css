@@ -1050,6 +1050,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   display: list-item;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -1061,13 +1062,6 @@ body {
 .footer .logo span {
   color: var(--white-color);
 }
-@media screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;
@@ -1077,8 +1071,18 @@ body {
 }
 
 .address-container {
-  width: 231px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .address-container {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address-container {
+    width: 231px;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .address-container {
@@ -1090,19 +1094,29 @@ body {
 .social {
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .social {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social {
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .social {
     text-align: left;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .social {
-    margin-right: auto;
-  }
-}
 
 .input {
   text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .input {
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .input {
@@ -1167,6 +1181,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
   background-color: inherit;
   font-weight: inherit;
   font-size: 16px;
@@ -1195,7 +1212,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .footer-form__input {
     width: 450px;
   }
@@ -1204,8 +1221,6 @@ body {
   .footer-form__input {
     width: 358px;
     margin-right: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
