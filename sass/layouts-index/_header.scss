@@ -78,12 +78,15 @@
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--second-maim-color-text);
-  @include font(500, 14px, 1.14, 0.02em);
+  @include font(500, 12px, 1.16, 0.02em);
   display: flex;
   align-items: center;
 
   @media screen and (min-width: 768px) {
     padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.14, 0.02em);
   }
 }
 

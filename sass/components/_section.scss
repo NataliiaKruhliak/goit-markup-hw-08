@@ -24,8 +24,8 @@
 
 .top-section {
   background-color: var(--second-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: var(--bg-gradient), url(../images/top-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -52,6 +52,8 @@
       (min-resolution: 2dppx) {
       background-image: var(--bg-gradient), url(../images/top-bg-2x.jpg);
     }
+    padding-top: 200px;
+    padding-bottom: 200px;
     // @include retina {
     //   background-image: var(--bg-gradient), url(../images/top-bg-2x.jpg);
     // }

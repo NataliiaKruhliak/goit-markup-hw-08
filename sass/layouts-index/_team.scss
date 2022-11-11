@@ -33,7 +33,11 @@
 
 .team-contant {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team-contant__title {
@@ -50,7 +54,7 @@
   margin-bottom: 16px;
 }
 
-.team .social {
+.team-social {
   margin-left: auto;
   margin-right: auto;
 }
