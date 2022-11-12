@@ -84,9 +84,6 @@ body {
 .link:focus, .link:hover {
   color: var(--accent-color);
 }
-.link.current {
-  color: var(--accent-color);
-}
 
 .no-scroll {
   overflow: hidden;
@@ -548,6 +545,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color-text);
   display: block;
+}
+.menu__link--current {
+  color: var(--accent-color);
 }
 
 .menu__link--current::after {

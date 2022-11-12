@@ -37,6 +37,10 @@
   @include font(500, 14px, 1.14, 0.02em);
   color: var(--main-color-text);
   display: block;
+
+  &--current {
+    color: var(--accent-color);
+  }
 }
 
 .menu__link--current::after {
